@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.smartshopping.sqlexamples.carddisplay"
+    android:background="#ffffff">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recylcerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="745dp"
+        tools:layout_editor_absoluteY="-51dp" />
+    <ProgressBar
+        android:id="@+id/carddisplaypro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="150dp"/>
+    <!--
+    <TextView
+        android:id="@+id/cources_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BANK CARDS"
+        android:textColor="#429ed7"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+        !-->
+    <!--
+    <ProgressBar
+        android:id="@+id/proCollageList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/borderImg"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_alignLeft="@+id/cources_title"
+        android:layout_below="@+id/cources_title"
+        android:background="#429ed7" />
+        !-->
+
+</RelativeLayout>

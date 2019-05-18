@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="20dp"
+    android:paddingRight="40dp"
+    android:background="@drawable/cardbackground"
+    tools:context="com.smartshopping.sqlexamples.AddCards">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Issueing Bank Name"
+        android:textColor="#429ed7"
+        android:textStyle="italic"
+        android:layout_marginTop="28dp" />
+    <EditText
+        android:id="@+id/issubank"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:textColor="#429ed7"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="75dp"
+        android:gravity="bottom"
+        android:text="Card Number"
+        android:textStyle="italic"
+        android:id="@+id/textView" />
+    <EditText
+        android:id="@+id/cardno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:inputType="number"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/addbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="Add Card"
+        android:layout_alignBaseline="@+id/display"
+        android:layout_alignBottom="@+id/display"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <Button
+        android:id="@+id/display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Display"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_below="@+id/cardno"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="125dp" />
+
+    <EditText
+        android:id="@+id/amnt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/cardno"
+        android:layout_marginTop="37dp"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:textColor="#429ed7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/cardno"
+        android:layout_marginTop="16dp"
+        android:text="Amount" />
+
+    <ProgressBar
+        android:id="@+id/spinner"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:max="@android:integer/config_mediumAnimTime"
+        android:progress="@android:integer/config_mediumAnimTime"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_centerHorizontal="true" />
+    <Button
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/clear"
+        android:text="clear"
+        android:textColor="@color/common_google_signin_btn_text_light"
+        android:layout_below="@+id/display"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/getbarcode"
+        android:layout_marginTop="200dp"/>
+
+</RelativeLayout>
